@@ -28,11 +28,15 @@ def clean_docx(doc, residents):
     return residents
                 
                     
+def process_document(input_file):
+    """Main function to process DOCX and save to JSON"""
+    doc = docx.Document(input_file)
+    residents = []
+    residents = clean_docx(doc, residents)
+    
+    # Save processed data to JSON
+    with open('menus.json', 'w') as f:
+        json.dump(residents, f, indent=4)
 
-doc = docx.Document('input_files/menus.docx')
-residents = []
-clean_docx(doc, residents)
-
-
-with open('menus.json', 'w') as f:
-    json.dump(residents, f, indent=4)
+if __name__ == "__main__":
+    process_document('input_files/menus.docx')
