@@ -25,7 +25,6 @@ def main():
 
         # Step 3: Print all generated PDFs
         print("Step 3: Printing menus...")
-        print("Note: There will be a 5-second delay between each print job")
         test_pdf_print()
         print("✓ Print jobs completed\n")
 
