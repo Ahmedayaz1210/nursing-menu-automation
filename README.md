@@ -24,19 +24,6 @@ Handles the automated printing of the processed menu PDFs, implementing timed de
 ### Main Controller (`main.py`)
 Coordinates all three processes in sequence, providing a single-command solution for the entire workflow.
 
-## Directory Structure
-
-nursing-menu-automation/
-├── input_files/
-│   ├── House.pdf        # Template for house diet
-│   ├── Ground.pdf       # Template for ground diet
-│   └── menus.docx       # Resident information document
-├── processed_menus/     # Output directory for completed menus
-├── doc_processor.py
-├── pdf_processor.py
-├── printing_processor.py
-└── main.py
-
 
 ## Important Note
 
